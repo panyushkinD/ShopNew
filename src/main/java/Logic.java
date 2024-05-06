@@ -14,7 +14,15 @@ public class Logic {
     public void addPhone(Phone phone) {
         phones.add(phone);
     }
-    public Phone getPhone(int index){
+
+    public Phone getPhone(int index) {
         return phones.get(index);
     }
+
+    public void printAllPhones() {
+        for (Phone phone : phones) {
+            System.out.println(phone);
+        }
+    }
+
 }
