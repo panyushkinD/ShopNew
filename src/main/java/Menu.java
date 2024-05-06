@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Menu {
     static void menu() {
+        Scanner scanner = new Scanner(System.in);
         Logic logic = new Logic();
         while (true) {
             System.out.println("Привет, это магазин тут можно добавлять/удалять товары.");
@@ -22,6 +23,12 @@ public class Menu {
                     String color = Util.inputString("Введи цвет:");
                     Phone phone = new Phone(name, price, color);
                     logic.addPhone(phone);
+                    break;
+
+                }
+                case 2: {
+                    int remove = scanner.nextInt();
+                    logic.removePhone(remove);
                     break;
 
                 }

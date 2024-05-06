@@ -23,5 +23,14 @@ public class Logic {
         return phones.size();
     }
 
+    public void removePhone(int index) {
+        if (index >= 0 && index < phones.size()) {
+            phones.remove(index);
+            System.out.println("Телефон успешно удален.");
+        } else {
+            System.out.println("Неверный индекс телефона. Телефон не удален.");
+        }
+    }
+
 
 }
