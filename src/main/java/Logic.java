@@ -19,10 +19,9 @@ public class Logic {
         return phones.get(index);
     }
 
-    public void printAllPhones() {
-        for (Phone phone : phones) {
-            System.out.println(phone);
-        }
+    public int getSize() {
+        return phones.size();
     }
+
 
 }

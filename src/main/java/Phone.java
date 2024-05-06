@@ -1,4 +1,4 @@
-public class Phone extends Product{
+public class Phone extends Product {
 
 
     private String color;
@@ -14,5 +14,12 @@ public class Phone extends Product{
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return "Наименование: " + getName() + ", " +
+                "цена: " + getPrice() + ", " +
+                "цвет: " + color;
     }
 }
